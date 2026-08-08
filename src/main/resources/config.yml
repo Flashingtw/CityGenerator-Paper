@@ -1,0 +1,28 @@
+# 每個城市格點之間的方塊距離（原 Denizen 腳本為 7）
+spacing: 7
+
+# /citycreate 的大小現在代表「路口節點總數」，不包含中間的 straight。
+max-node-count: 100
+
+# 每 tick 最多貼上的 schematic 數量。提高會加快生成，但也會增加卡頓。
+placements-per-tick: 1
+
+# 是否連同 schematic 中的空氣一起貼上。
+paste-air: true
+
+# 兩個路口之間的道路長度範圍，單位是一個 schematic（預設 7 方塊）。
+# 每條道路會在此範圍內獨立隨機取長度。
+min-edge-length: 2
+max-edge-length: 6
+
+# 可設 0 或 1。設為 1 會在新道路與既有道路之間保留街廓空間，避免黏成一片。
+road-clearance: 1
+
+# 自然閉環候選邊的採用機率（0～100）。設為 0 可維持純樹狀道路。
+loop-chance: 30
+
+# 每座城市最多補幾個環。設為 0 時依指令要求的節點數自動計算。
+max-loops: 0
+
+# 相對於 plugins/CityGenerator/ 的 schematic 目錄。
+schematic-folder: schematics

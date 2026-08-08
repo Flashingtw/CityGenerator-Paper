@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+
+# Local portable toolchain (JDK/Gradle downloads)
+.tools/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Server diagnostics and local runtime data
+server-check/
+run/
+logs/
+plugins/
+
+# Generated plugin artifacts
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,23 @@
+name: CityGenerator
+version: '${version}'
+main: tw.flashing.citygenerator.CityGeneratorPlugin
+description: Generates a procedural city from WorldEdit schematics.
+author: Flashingtw
+api-version: '26.2'
+depend: [WorldEdit]
+commands:
+  citycreate:
+    description: 生成隨機城市
+    usage: /citycreate <路口節點數>
+    permission: dgspawn.use
+  stopdungeon:
+    description: 停止目前的城市生成
+    usage: /stopdungeon
+    permission: stopdungeon.use
+permissions:
+  dgspawn.use:
+    description: 允許使用 /citycreate
+    default: op
+  stopdungeon.use:
+    description: 允許使用 /stopdungeon
+    default: op
